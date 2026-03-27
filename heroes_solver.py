@@ -64,7 +64,7 @@ INSERT_EVERY = 20
 
 # Визуализация
 VIS_STEPS_PER_DAY = 30
-VIS_OUT_HTML = "best_routes_visualization.html"
+VIS_OUT_HTML = "heroes_visualization.html"
 
 DIRECTORY = r"C://Users//Иван Волохов//.spyder-py3//data//"
 
@@ -1611,8 +1611,8 @@ def main():
     print("#" * 80)
 
     out = routes_to_df(global_best)
-    out.to_csv("best_submit_push_day1_and_123.csv", index=False)
-    print("saved: best_submit_push_day1_and_123.csv")
+    out.to_csv("solution_heroes.csv", index=False)
+    print("saved: solution_heroes.csv")
 
     create_interactive_visualization(
         routes=global_best,
